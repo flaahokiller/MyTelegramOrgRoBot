@@ -26,7 +26,7 @@ def request_tg_code_get_random_hash(input_phone_number):
     which is used in STEP TWO """
     request_url = "https://my.telegram.org/auth/send_password"
     request_data = {
-        "phone": input_phone_number
+        "phone": input_your_house//phone_no
     }
     response_c = requests.post(request_url, data=request_data)
     json_response = response_c.json()
